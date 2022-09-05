@@ -1,0 +1,11 @@
+{
+    "update" : "Updated with successfully",
+    "password_incorrect" : "Password incorrect",
+    "invalid_token" : "Invalid token",
+    "token_not_provided" : "Token not provided",
+    "email_not_found" : "Email not found",
+    "404" : "Not found",
+    "input_incorrect": "Invalid request, wrong input",
+    "success" : "success",
+    "error_sum_wallets" : "Error on your wallets, delete and create wallets again, if not resolve your issue send a ticket to us"
+}
