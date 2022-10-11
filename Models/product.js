@@ -3,13 +3,18 @@ const connection = require("../database/database");
 
 const Product = connection.define("product", {
   // Model attributes are defined here
+  id: {
+    type: DataTypes.UUID,
+    defaultValue: DataTypes.UUIDV4,
+    primaryKey: true,
+  },
   name: {
     type: DataTypes.STRING,
-    allowNull: false
+    allowNull: false,
   },
   slug: {
     type: DataTypes.STRING,
-    allowNull: false
+    allowNull: false,
   },
   avatar: {
     type: DataTypes.STRING,
@@ -21,14 +26,13 @@ const Product = connection.define("product", {
     type: DataTypes.STRING,
   },
   spotlight: {
-    type: DataTypes.ENUM('1','0'),
-    defaultValue: '0'
+    type: DataTypes.ENUM("1", "0"),
+    defaultValue: "0",
   },
   active: {
-    type: DataTypes.ENUM('1','0'),
-    defaultValue: '0'
-  }
+    type: DataTypes.ENUM("1", "0"),
+    defaultValue: "0",
+  },
 });
-
 
 module.exports = Product;
